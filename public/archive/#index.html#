@@ -1,0 +1,134 @@
+<!doctype html>
+<!--[if lt ie 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+    </head>
+    <body id="body">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.comv/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+	
+        <h1>College2Pro Football Stats</h1>
+	<br>
+	
+<div id="selectors">
+
+  <select id="team-select" name="Colleges">
+         <option>Choose College</option>
+         <option>Alabama</option><option>Arkansas</option><option>Auburn</option><option>Florida</option><option>Georgia</option>
+         <option>Kentucky</option><option>LSU</option><option>Mississippi</option><option>Mississippi State</option>
+         <option>Missouri</option><option>South Carolina</option><option>Tennessee</option><option>Texas A&#38;M</option>
+         <option>Vanderbilt</option>
+         </select>
+        <input value="Get Stats" type="submit" id="team-submit">
+
+<span id="college2-select" >
+         <select id="team-select2" name="Colleges">
+         <option>Choose College</option>
+          <option>Alabama</option><option>Arkansas</option><option>Auburn</option><option>Florida</option><option>Georgia</option>
+         <option>Kentucky</option><option>LSU</option><option>Mississippi</option><option>Mississippi State</option>
+         <option>Missouri</option><option>South Carolina</option><option>Tennessee</option><option>Texas A&#38;M</option>
+         <option>Vanderbilt</option>
+         </select>
+        <input value="Get Stats" type="submit" id="team-submit2">
+</span>
+
+
+</div>
+
+       <div id="compare-stats">
+	 <h4 style="font-size: 15px;
+		    margin: 10px auto;
+		    text-align:center">Choose Player Position to Compare Stats</h4>
+	 <center>
+	   <select name="positions" class="position-list">
+        <option>All Positions</option>
+        <option>Quarterbacks</option>
+	<option>Runningbacks</option>
+        <option>Receivers</option>
+	<option>Defensive Backs</option>
+        <option>Linebackers</option>
+        <option>Punters</option>
+        <option>Place Kickers</option>
+	   </select>
+	   <input value="Compare" type="submit" id="compare-submit"> 
+	 </center>
+	</div> 
+<table style="width:100%" id="stat-table">
+
+<colgroup>                                                                                                                                                 <col                                                                                                                                                       width="50%"
+/>
+<col                                                                                                                                                       width="50%"
+/>
+</colgroup>     
+
+<tr style="height:80px">
+	 <td>
+	   <div id="compared-data">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	   </div>
+	 </td>
+	 <td>
+	   <div style="float:right" id="compared-data2">
+	             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	   </div>	     
+	 </td>
+</tr>	 
+<tr>
+     <td>    
+       <div id="college1">
+
+       <div id="team-data"></div>
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+       </div>
+     
+     </td>  
+     <td>
+       <div id="college2">
+
+        <div id="team-data2"></div>
+        <script src="js/main.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       </div>
+
+     </td>
+</tr>
+</table>
+
+	<script>window.jquery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+	
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
