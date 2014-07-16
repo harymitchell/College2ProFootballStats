@@ -40,11 +40,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+
+// DB connection
 var mongoose = require('mongoose');
 var uristring = "mongodb://hary:hary1234@ds041238.mongolab.com:41238/heroku_app17130646";
 var Schema = mongoose.Schema;
 var models = require('./models');
-
 
 app.get('/api', function (req, res) {
     res.send('App is running');
@@ -53,8 +54,6 @@ app.get('/api', function (req, res) {
 app.post('/api/players', function (req, res){    
     models.players.find({'personal.college':req.body['college']}).lean().exec(function(err, players) {
         if (err) return console.error(err);
-	//var obj = JSON.parse(players);
-	//console.log(typeof(obj));
 	var colStyle = '<table id="tester" width="100%" border="1" cellspacing="2" cellpadding="2" position="static" border-collapse="collapse">';
 //<colgroup><colwidth="100px"/><colwidth="150px"/><colwidth="150px"/><colwidth="150px"/><colwidth="150px"/></colgroup>';
 	var headers='<th border="1">Name</th><th border="1">College</th><th border="1">Pos</th><th border="1">NFL Team</th>';
